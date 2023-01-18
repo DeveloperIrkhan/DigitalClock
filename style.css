@@ -32,10 +32,36 @@ body,
     /* box-shadow: 0 5px 45px rgba(14, 21, 37, .8); */
     border-radius: 10px;
 }
-.d-clock::before{
+
+.bottomdiv {
+    position: absolute;
+    margin: auto;
+    bottom: 30px;
+    color: #ffff;
+    padding: 30px 50px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+#text {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+
+}
+
+#github {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+
+
+}
+
+.d-clock::before {
     content: '';
     position: absolute;
-    background: linear-gradient(45deg, rgb(233, 11, 159),rgb(226, 160, 36),rgb(24, 226, 24));
+    background: linear-gradient(45deg, rgb(233, 11, 159), rgb(226, 160, 36), rgb(24, 226, 24));
     background-size: 200% 200%;
     top: -5px;
     left: -5px;
@@ -45,16 +71,19 @@ body,
     filter: blur(20px);
     animation: glowing 2s ease-out infinite;
 }
-@keyframes glowing{
-    0%{
-        background-position: 0% 70%; 
-     }
-     50%{
-        background-position: 100% 50%; 
-     }
-     100%{
-        background-position: 0% 50%; 
-     }
+
+@keyframes glowing {
+    0% {
+        background-position: 0% 70%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 body {
@@ -67,7 +96,7 @@ body {
     padding: 0 20px;
     line-height: 125px;
     font-size: 8em;
-    background: -webkit-linear-gradient(90deg, rgb(120, 94, 236),rgb(250, 246, 246));
+    background: -webkit-linear-gradient(90deg, rgb(120, 94, 236), rgb(250, 246, 246));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -75,31 +104,38 @@ body {
 .right-side {
     flex-direction: column;
 }
-#dots{
+
+#dots {
     font-size: 4em;
     transform: translate(-3px);
     color: gray;
 }
-#min{
+
+#min {
     font-size: 5em;
     font-weight: 500;
     margin-left: 10px;
     transform: translateY(5px);
-    background: -webkit-linear-gradient(90deg, rgb(204, 86, 71),white);
+    background: -webkit-linear-gradient(90deg, rgb(204, 86, 71), white);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
-.right-down{
-    margin-left: 18px; 
+
+.right-down {
+    margin-left: 18px;
 }
-#period, #sec{
-    font-size : 1.5em;
+
+#period,
+#sec {
+    font-size: 1.5em;
     margin-left: 18px;
     font-weight: 500;
 }
-#period{
+
+#period {
     color: orange;
 }
-#sec{
-    color:rgb(255, 255, 255);
+
+#sec {
+    color: rgb(255, 255, 255);
 }
